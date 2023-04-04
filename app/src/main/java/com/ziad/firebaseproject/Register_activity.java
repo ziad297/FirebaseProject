@@ -18,6 +18,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+
 public class Register_activity extends AppCompatActivity {
     EditText Name;
     EditText Email;
@@ -48,7 +50,6 @@ public class Register_activity extends AppCompatActivity {
                 String email = Email.getText().toString();
                 String phone = Phone.getText().toString();
                 String password = Password.getText().toString();
-                Toast.makeText(Register_activity.this, "CLICKJSJSJ", Toast.LENGTH_SHORT).show();
                 auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {

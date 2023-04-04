@@ -10,7 +10,7 @@
         android:id="@+id/Email1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="164dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
@@ -36,7 +36,7 @@
         android:id="@+id/Reg_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="56dp"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -47,15 +47,24 @@
         android:id="@+id/Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:fontFamily="sans-serif-black"
         android:text="Register Now"
         android:textColor="#000000"
         android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleIMG" />
+
+    <ImageView
+        android:id="@+id/googleIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Reg_btn"
-        app:layout_constraintVertical_bias="0.26" />
+        app:srcCompat="@drawable/icons8_google_48" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
